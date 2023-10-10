@@ -27,7 +27,7 @@ const pawfectnyc = new Project(
 const seniors = new Project(
     "Learning Experience Design",
     "Learning Solution Designed for 65+ Seniors",
-    "In this project, our team has created a series of in-person courses for 65+ seniors to gain more social connections and help them learn how to use common social media such as WeChat, Alipay, and YouTube.",
+    "In this project, our team has created a series of in-person courses for 65+ seniors to gain more social connections and help them learn how to use common social media such as WeChat, Alipay, and YouTube. We also used Google Classroom to create course prototypes to make the physical courses easier for stakeholders to understand in a more visual form.",
     "seniors.jpg",
     "four seniors sitting on the ground learning on their phones"
 );
