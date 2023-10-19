@@ -75,3 +75,32 @@ projectArray.forEach(function(project) {
 var projectGridElement = document.querySelector('.project-grid');
 console.log(projectGridElement);
 projectGridElement.innerHTML = projectContent;
+
+function hideAllSections() {
+    document.querySelectorAll('main > section').forEach(function (section) {
+      section.style.display = 'none';
+    });
+  }
+  
+  function showSection(sectionClass) {
+    hideAllSections();
+    const section = document.querySelector(`.${sectionClass}`);
+    if (section) {
+      section.style.display = 'grid';
+    }
+  }
+  
+  document.querySelector('.menu-bar').addEventListener('click', function (event) {
+    const text = event.target.textContent;
+    if (text === 'About') {
+      showSection('landing');
+    } else if (text === 'Projects') {
+      showSection('project-grid');
+    } else if (text === 'Skills') {
+      showSection('skills');
+    } else if (text === 'Contact') {
+      showSection('contact');
+    }
+  });
+  
+  showSection('landing');
