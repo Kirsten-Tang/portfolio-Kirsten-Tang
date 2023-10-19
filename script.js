@@ -61,7 +61,7 @@ var projectArray = [
     ),
 ];
 
-let projectContent = "";
+var projectContent = "";
 projectArray.forEach(function(project) {
     projectContent += `
       <article>
@@ -72,6 +72,6 @@ projectArray.forEach(function(project) {
     `;
 });
 
-var projectgridElement = document.querySelector('.project-grid');
-console.log(projectgridElement);
-projectgridElement.innerHTML = projectContent;
+var projectGridElement = document.querySelector('.project-grid');
+console.log(projectGridElement);
+projectGridElement.innerHTML = projectContent;
