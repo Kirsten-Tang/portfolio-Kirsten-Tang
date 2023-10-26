@@ -40,6 +40,7 @@ header{
   align-items: center;
   padding: 0 10px;
   margin: 50px 0 0 0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 .menu-bar li {
   list-style: none;
@@ -67,6 +68,11 @@ header{
   color: black;
 }
 .menu-bar li:hover::before {
+  background: linear-gradient(to bottom, #5c2ec0, #d38ef8);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
+}
+.menu-bar li.clicked::before {
   background: linear-gradient(to bottom, #5c2ec0, #d38ef8);
   box-shadow: 0px 3px 20px 0px black;
   transform: scale(1.2);
@@ -141,25 +147,31 @@ main {
   background-color: transparent;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 article{
   width: auto;
   height: auto;
-  background-color: rgb(250, 242, 255);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 15px;
-  padding: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 article:hover {
-  box-shadow: 4px 4px 4px 4px rgba(255, 255, 255, 0.651);
+  transform: scale(1.05);
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
 }
 
 img {
   width: 100%;
   height: auto;
   padding-bottom: 0.5rem;
+  border-radius: 15px;
 }
 
 .text {
@@ -168,6 +180,14 @@ img {
 
 h2 {
   color: #333;
+}
+
+h3 {
+  color: white;
+}
+
+.project-description {
+  color: white;
 }
 
 footer {
