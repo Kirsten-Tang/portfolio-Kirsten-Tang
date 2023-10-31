@@ -77,7 +77,6 @@ function addBackButton(articleElement) {
   backButton.addEventListener('click', function (event) {
     event.preventDefault();
     event.stopPropagation();
-  
     projectGridElement.style.gridTemplateColumns = '1fr 1fr';
   
     document.querySelectorAll('.project-grid article').forEach(function (art) {
