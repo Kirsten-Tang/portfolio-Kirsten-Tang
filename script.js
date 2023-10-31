@@ -6,17 +6,24 @@ const Project = class {
         header,
         description,
         imageSrc,
-        imageAlt
+        imageAlt,
+        detail
     ){
         this.id = id;
         this.header = header;
         this.description = description;
         this.imageSrc = imageSrc;
-        this.imageAlt = imageAlt
+        this.imageAlt = imageAlt;
+        this.detail = detail;
     }
 };
 
 const projectGridElement = document.querySelector('.project-grid');
+const modalContainer = document.querySelector('#modal');
+const modalContent = document.querySelector('#modal-content');
+const modalItems = document.querySelector('#modal-items');
+const closeModalButton = document.querySelector('#closeModalButton');
+const body = document.querySelector('body');
 let globalData;
 
 fetch("projects.json")
@@ -52,73 +59,75 @@ function buildElements(item){
 
     projectGridElement.append(articleElement);
 
-    articleElement.addEventListener('click', function () {
-      projectGridElement.style.gridTemplateColumns = '1fr';
-
-      document.querySelectorAll('.project-grid article').forEach(function (art) {
-          if (art !== articleElement) {
-              art.style.display = 'none'; 
-          } else {
-              art.classList.add('clicked'); 
-
-              if (!art.querySelector('.back-button')) {
-                  addBackButton(art);
-              }
-          }
-      });
-  });
+    articleElement.addEventListener('click', function (event) {
+        body.classList.add('modal-active');
+        modalContainer.classList.add('active');
+        modalItems.classList.add('active');
+        
+        getSelectedArticleContent(event);
+    });
 };
 
-function addBackButton(articleElement) {
-  var backButton = document.createElement("button");
-  backButton.textContent = "Back to All Projects";
-  backButton.classList.add('back-button');
-
-  backButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    projectGridElement.style.gridTemplateColumns = '1fr 1fr';
-  
-    document.querySelectorAll('.project-grid article').forEach(function (art) {
-      art.style.display = 'block';
-      art.classList.remove('clicked');
+function getSelectedArticleContent(event) {
+    globalData.find(function(item){
+        if(item.id == event.currentTarget.id){ 
+            console.log(item.id);
+            console.log(item.description);
+            console.log(item.imageSrc);
+            modalItems.innerHTML = `
+                <h3>${item.header}</h3>
+                <img src="assets/${item.imageSrc}" alt="${item.imageAlt}">
+                <p>${item.description}</p>
+                <p>${item.detail}</p>
+                <button id="closeModalButton">Back to Projects</button>
+            `;
+        }
     });
-  
-    backButton.remove();
-  });
-
-  articleElement.appendChild(backButton);
 }
 
+closeModalButton.addEventListener('click', function () {
+    body.classList.remove('modal-active');
+    modalContainer.classList.remove('active');
+    modalItems.classList.remove('active');
+});
+
+document.addEventListener('click', function (event) {
+    if (event.target.id === 'closeModalButton') {
+        body.classList.remove('modal-active');
+        modalContainer.classList.remove('active');
+        modalItems.classList.remove('active');
+    }
+});
+
 function hideAllSections() {
-  document.querySelectorAll('main > section').forEach(function (section) {
-      section.style.display = 'none';
-  });
+    document.querySelectorAll('main > section').forEach(function (section) {
+        section.style.display = 'none';
+    });
 }
 
 function showSection(sectionClass) {
-  hideAllSections();
-  const section = document.querySelector(`.${sectionClass}`);
-  if (section) {
-      section.style.display = 'grid';
-  }
+    hideAllSections();
+    const section = document.querySelector(`.${sectionClass}`);
+    if (section) {
+        section.style.display = 'grid';
+    }
 }
 
 document.querySelector('.menu-bar').addEventListener('click', function (event) {
-  const text = event.target.textContent;
-  if (text === 'About') {
-      showSection('landing');
-  } else if (text === 'Projects') {
-      showSection('project-grid');
-  } else if (text === 'Skills') {
-      showSection('skills');
-  } else if (text === 'Contact') {
-      showSection('contact');
-  }
-  document.querySelectorAll('.menu-bar li').forEach(function (li) {
-      li.classList.remove('clicked');
-  });
-  event.target.classList.add('clicked');
+    const text = event.target.textContent;
+    if (text === 'About') {
+        showSection('landing');
+    } else if (text === 'Projects') {
+        showSection('project-grid');
+    } else if (text === 'Skills') {
+        showSection('skills');
+    } else if (text === 'Contact') {
+        showSection('contact');
+    }
+    document.querySelectorAll('.menu-bar li').forEach(function (li) {
+        li.classList.remove('clicked');
+    });
+    event.target.classList.add('clicked');
 });
 
 showSection('landing');
