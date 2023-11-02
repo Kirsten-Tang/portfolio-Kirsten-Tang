@@ -235,7 +235,6 @@ h3 {
   justify-content: center;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 1.5rem;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
@@ -314,6 +313,63 @@ h3 {
 #modal-content img {
   width: 100%;
   height: auto;
+}
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-container {
+  width: 400px;
+  margin: 40vh auto;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.5em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(to bottom, #5c2ec0, #d38ef8);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ffffff;
+  background: -webkit-linear-gradient(45deg, #5c2ec0, #d38ef8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
 }
 
 footer {
