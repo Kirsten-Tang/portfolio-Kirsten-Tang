@@ -48,10 +48,12 @@ function buildElements(item){
     var articleElement = document.createElement("article");
     articleElement.setAttribute('id', item.id);
 
-    var imgElement = document.createElement("img");
-    imgElement.setAttribute('src', `assets/${item.imageSrc}`);
-    imgElement.setAttribute('alt', item.imageAlt);
-    articleElement.appendChild(imgElement);
+    if (item.images && item.images.length > 0) {
+        var imgElement = document.createElement("img");
+        imgElement.setAttribute('src', `assets/${item.images[0].src}`);
+        imgElement.setAttribute('alt', item.images[0].alt);
+        articleElement.appendChild(imgElement);
+    }
 
     var h3Element = document.createElement("h3");
     h3Element.textContent = item.header;
@@ -74,23 +76,41 @@ function buildElements(item){
 };
 
 function getSelectedArticleContent(event) {
-    globalData.find(function(item){
-        if(item.id === event.currentTarget.id){
+    globalData.find(function(item) {
+        if (item.id === event.currentTarget.id) {
             let contentHTML = `<div class="observable"><h3>${item.header}</h3></div>`;
 
-            // First image and paragraph side by side
+            let firstParagraph = item.paragraphs[0].replace(/\n/g, "<br><br>");
             contentHTML += `
                 <div class="observable flex-container">
-                    <img class="modal-img-left" src="assets/${item.imageSrc}" alt="${item.imageAlt}">
-                    <p class="modal-text-right">${item.detail}</p>
+                    <img class="modal-img-left" src="assets/${item.images[0].src}" alt="${item.images[0].alt}">
+                    <p class="modal-text-right">${firstParagraph}</p>
                 </div>`;
 
-            // Additional paragraph (detail)
-            contentHTML += `
-                <div class="observable">
-                    <p class="modal-text">${item.detail}</p>
-                </div>`;
-            
+            item.paragraphs.slice(1).forEach(paragraph => {
+                let formattedParagraph = paragraph.replace(/\n/g, "<br><br>");
+                contentHTML += `
+                    <div class="observable">
+                        <p class="modal-text">${formattedParagraph}</p>
+                    </div>`;
+            });
+
+            item.images.slice(1).forEach(image => {
+                if (image.link) {
+                    contentHTML += `
+                        <div class="observable">
+                            <a href="${image.link}" target="_blank">
+                                <img class="modal-img" src="assets/${image.src}" alt="${image.alt}">
+                            </a>
+                        </div>`;
+                } else {
+                    contentHTML += `
+                        <div class="observable">
+                            <img class="modal-img" src="assets/${image.src}" alt="${image.alt}">
+                        </div>`;
+                }
+            });
+
             modalItems.innerHTML = contentHTML;
             observeModalContent();
         }
@@ -120,8 +140,6 @@ modalContainer.addEventListener('click', function(event) {
         closeModal();
     }
 });
-
-closeModalButton.addEventListener('click', closeModal);
 
 document.addEventListener('click', function (event) {
     if (event.target.id === 'closeModalButton') {
