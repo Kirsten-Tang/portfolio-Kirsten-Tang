@@ -75,13 +75,36 @@ function getSelectedArticleContent(event) {
             console.log(item.description);
             console.log(item.imageSrc);
             modalItems.innerHTML = `
-                <h3>${item.header}</h3>
-                <img src="assets/${item.imageSrc}" alt="${item.imageAlt}">
-                <p>${item.description}</p>
-                <p>${item.detail}</p>
-                <button id="closeModalButton">Back to Projects</button>
+                <div class="observable">
+                    <h3>${item.header}</h3>
+                    <img src="assets/${item.imageSrc}" alt="${item.imageAlt}">
+                </div>
+                <div class="observable">
+                    <p>${item.description}</p>
+                    <p>${item.detail}</p>
+                </div>
+                <!-- Add more content as needed -->
             `;
+            observeModalContent();
         }
+    });
+}
+
+function observeModalContent() {
+    const elements = document.querySelectorAll('.observable');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-opacity");
+            } else {
+                entry.target.classList.remove("animate-opacity");
+            }
+        });
+    }, { threshold: 0.5 });
+
+    elements.forEach((element) => {
+        observer.observe(element);
     });
 }
 
