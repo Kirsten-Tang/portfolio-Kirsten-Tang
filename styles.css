@@ -200,28 +200,25 @@ h3 {
   color: white;
 }
 
-#closeModalButton {
-  border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  color: white;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 20px 30px; 
-  width: 200px; 
-  height: 60px; 
-  margin: 20px 0 0 0;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  border: none;
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-#closeModalButton:hover {
-  color: black;
-  background: linear-gradient(to bottom, #5c2ec0, #d38ef8);
-  box-shadow: 0px 3px 20px 0px black;
+.modal-img-left {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.modal-text-right {
+  width: 50%;
+}
+
+.modal-text {
+  width: 100%;
+  margin-top: 10px;
 }
 
 #modal {

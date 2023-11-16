@@ -22,7 +22,6 @@ const projectGridElement = document.querySelector('.project-grid');
 const modalContainer = document.querySelector('#modal');
 const modalContent = document.querySelector('#modal-content');
 const modalItems = document.querySelector('#modal-items');
-const closeModalButton = document.querySelector('#closeModalButton');
 const body = document.querySelector('body');
 let globalData;
 
@@ -38,6 +37,12 @@ function createContent(globalData){
         buildElements(item);
     });
 };
+
+function closeModal() {
+    body.classList.remove('modal-active');
+    modalContainer.classList.remove('active');
+    modalItems.classList.remove('active');
+}
 
 function buildElements(item){
     var articleElement = document.createElement("article");
@@ -70,21 +75,23 @@ function buildElements(item){
 
 function getSelectedArticleContent(event) {
     globalData.find(function(item){
-        if(item.id == event.currentTarget.id){ 
-            console.log(item.id);
-            console.log(item.description);
-            console.log(item.imageSrc);
-            modalItems.innerHTML = `
+        if(item.id === event.currentTarget.id){
+            let contentHTML = `<div class="observable"><h3>${item.header}</h3></div>`;
+
+            // First image and paragraph side by side
+            contentHTML += `
+                <div class="observable flex-container">
+                    <img class="modal-img-left" src="assets/${item.imageSrc}" alt="${item.imageAlt}">
+                    <p class="modal-text-right">${item.detail}</p>
+                </div>`;
+
+            // Additional paragraph (detail)
+            contentHTML += `
                 <div class="observable">
-                    <h3>${item.header}</h3>
-                    <img src="assets/${item.imageSrc}" alt="${item.imageAlt}">
-                </div>
-                <div class="observable">
-                    <p>${item.description}</p>
-                    <p>${item.detail}</p>
-                </div>
-                <!-- Add more content as needed -->
-            `;
+                    <p class="modal-text">${item.detail}</p>
+                </div>`;
+            
+            modalItems.innerHTML = contentHTML;
             observeModalContent();
         }
     });
@@ -108,17 +115,17 @@ function observeModalContent() {
     });
 }
 
-closeModalButton.addEventListener('click', function () {
-    body.classList.remove('modal-active');
-    modalContainer.classList.remove('active');
-    modalItems.classList.remove('active');
+modalContainer.addEventListener('click', function(event) {
+    if (event.target === modalContainer) {
+        closeModal();
+    }
 });
+
+closeModalButton.addEventListener('click', closeModal);
 
 document.addEventListener('click', function (event) {
     if (event.target.id === 'closeModalButton') {
-        body.classList.remove('modal-active');
-        modalContainer.classList.remove('active');
-        modalItems.classList.remove('active');
+        closeModal();
     }
 });
 
