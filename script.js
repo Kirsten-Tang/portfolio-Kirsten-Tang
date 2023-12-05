@@ -95,21 +95,20 @@ function getSelectedArticleContent(event) {
                     </div>`;
             });
 
+            let linkedImagesHTML = '<div class="linked-images-grid">';
             item.images.slice(1).forEach(image => {
                 if (image.link) {
-                    contentHTML += `
-                        <div class="observable">
+                    linkedImagesHTML += `
+                        <div class="observable linked-image-container">
                             <a href="${image.link}" target="_blank">
                                 <img class="modal-img" src="assets/${image.src}" alt="${image.alt}">
                             </a>
                         </div>`;
-                } else {
-                    contentHTML += `
-                        <div class="observable">
-                            <img class="modal-img" src="assets/${image.src}" alt="${image.alt}">
-                        </div>`;
                 }
             });
+            linkedImagesHTML += '</div>';
+
+            contentHTML += linkedImagesHTML;
 
             modalItems.innerHTML = contentHTML;
             observeModalContent();

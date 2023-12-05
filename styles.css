@@ -454,7 +454,25 @@ footer {
   height: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}  
+}
+
+.linked-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  
+  .modal-img-left,
+  .modal-text-right {
+    width: 100%; 
+    margin-right: 0; 
+  }
+}
 
 #stars {
   width: 1px;
