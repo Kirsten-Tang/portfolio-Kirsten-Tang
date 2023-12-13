@@ -80,55 +80,380 @@
         "id" : "Learning Experience Design",
         "header" : "Learning Solution Designed for 65+ Seniors",
         "description" : "In this project, our team has created a series of in-person courses for 65+ seniors to gain more social connections and help them learn how to use common social media such as WeChat, Alipay, and YouTube. We also used Google Classroom to create course prototypes to make the physical courses easier for stakeholders to understand in a more visual form.",
-        "images": [
-            {"src": "seniors.jpg", "alt": ""},
-            {"src": "seniors2.png", "alt": "Description of image 2", "link": "https://drive.google.com/drive/folders/12M2ENLoTMPwvyaQniOqCgfhbrD4Hh0s2?usp=sharing"},
-            {"src": "seniors3.png", "alt": "Description of image 3", "link":"https://dpl-challenge-project-learning-solution.webflow.io/"}
-        ],
-        "paragraphs": [
-            "The digital age has left many elderly individuals behind, particularly those 65 and older, leading to social isolation and the inability to connect with younger generations who primarily communicate through social media after retirement. This results in a decline in social relationships and interactions, leading to loneliness and other related problems that prevent them from having a healthy retirement life. Unfortunately, current learning solutions are insufficient to address the needs of seniors who are unfamiliar with technology. A learning solution is needed to bridge the digital divide and help our target population to acquire the necessary digital skills to stay connected with the world and reduce social isolation. Our learning design aims to provide an accessible learning platform for seniors, enabling them to learn effectively and overcome social isolation. \n We divided the stakeholders into three categories, namely direct stakeholders, indirect stakeholders, and mixed stakeholders. We listed all the stakeholders and made a stakeholder map. \n We also conducted 5 interviews with our target population. Our research process involves the identification of a target population of seniors over 65 and preparing interview questions. We also searched the internet for existing learning solutions, the target population's learning habits, teaching methods, curriculum, and learning environment settings. In the second stage, we conducted interviews with six interviewees, collected data, and prioritized the needs of the target population. We also compiled helpful resources from the web, including existing solutions, research articles, and social media tools. Last but not least, we also identified challenges faced by seniors, such as fraud and privacy issues. According to the data we have collected, in our vision, we will set the course in a physical environment; that is, seniors will come to the physical classroom to learn. We have considered in detail both the physical and the social context of our learning environment. \n Our general learning goal is for 65+ seniors to gain more social connections after completing social media courses. The specific goals and objectives for the WeChat, Alipay and Youtube courses are outlined, including tasks such as commenting on a post, sending a message, and subscribing to videos.",
-            "In the design phase, We brainstormed many preliminary design ideas, and after integrating all the opinions, we got three relatively complete design ideas. According to these three designs, we finally integrated them into the final design through all aspects of consideration. After the design stage, we made an LMS prototype based on our final design idea. Then we prepared a series of evaluation plans, and based on the collected data, we modified our design. We are utilizing Google Classroom as our Learning Management System (LMS) due to its collaborative features, which allow us to work together as a team simultaneously. This platform is an accessible and user-friendly option with a straightforward interface. We selected a cover image that showcases our three primary courses: WeChat, Alipay, and YouTube. Furthermore, we opted for a green color scheme as it has a calming effect on users and is gentle on the eyes."
-    ]
+        "content": [
+            {
+                "image": {
+                    "src": "seniors.jpg",
+                    "alt": ""
+                },
+                "paragraph": "The digital age has left many elderly individuals behind, particularly those 65 and older, leading to social isolation and the inability to connect with younger generations who primarily communicate through social media after retirement. This results in a decline in social relationships and interactions, leading to loneliness and other related problems that prevent them from having a healthy retirement life. Unfortunately, current learning solutions are insufficient to address the needs of seniors who are unfamiliar with technology. A learning solution is needed to bridge the digital divide and help our target population to acquire the necessary digital skills to stay connected with the world and reduce social isolation. Our learning design aims to provide an accessible learning platform for seniors, enabling them to learn effectively and overcome social isolation."
+            },
+            {
+                "image": {
+                    "src": "targetusers.png",
+                    "alt": "Description of image 2"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycsarah.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "paragraph": "Our learners are in the learning environment because they need to gain knowledge of technology. After retirement, the elderly usually face the decline of social relations, the shrinking of their living circle, and the lack of social interaction. They also lack knowledge of the dominant means of socializing—social media—leading to a strong sense of loneliness."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycbackground.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "image": {
+                    "src": "socialmedias.jpg",
+                    "alt": "Description of image 4"
+                }},
+            {
+                "paragraph": "Our research process involves the identification of a target population of seniors over 65 and preparing interview questions. We also searched the internet for existing learning solutions, the target population's learning habits, teaching methods, curriculum, and learning environment settings. In the second stage, we conducted interviews with six interviewees, collected data, and prioritized the needs of the target population. We also compiled helpful resources from the web, including existing solutions, research articles, and social media tools. Last but not least, we also identified challenges faced by seniors, such as fraud and privacy issues."
+            },
+            {
+                "paragraph": "In the second stage, we started our interview after generating the interview questions. After collecting everyone's interview notes, we analyzed the data and prioritized the needs of the target population. We interviewed a total of six interviewees, and each interviewee brought us valid data. We have also compiled useful resources from the web."
+            },
+            {
+                "image": {
+                    "src": "feedbacks.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "image": {
+                    "src": "feedbackprocess.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "paragraph": "In the early conception and design stage, we envisioned various instructional designs to help seniors complete our learning goal. We drew sketches, created storyboards, and met regularly to discuss and converge our ideas. Not only did we discuss it within our group, but we also showed the storyboards to other students in the class and listened to their feedback. After combining ideas and feedback, we came up with three design ideas."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycprototype.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype1.jpg",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype2.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype3.jpg",
+                    "alt": "Description of image 6"
+                }}
+        ]
     },
     {
         "id" : "Learning Design Analysis",
         "header" : "Learning Design Case Study: Kahoot!",
         "description" : "In this project, I chose Kahoot as the existing learning design for analysis, such as its learners, motivation, learning context, learning experience, learning goals, learning theories, design process, and overall design critique.",
-        "images": [
-            {"src": "kahoot.png", "alt": ""},
-            {"src": "seniors2.png", "alt": "Description of image 2", "link": "https://drive.google.com/drive/folders/12M2ENLoTMPwvyaQniOqCgfhbrD4Hh0s2?usp=sharing"},
-            {"src": "seniors3.png", "alt": "Description of image 3", "link":"https://dpl-challenge-project-learning-solution.webflow.io/"}
-        ],
-        "paragraphs": [
-            "The digital age has left many elderly individuals behind, particularly those 65 and older, leading to social isolation and the inability to connect with younger generations who primarily communicate through social media after retirement. This results in a decline in social relationships and interactions, leading to loneliness and other related problems that prevent them from having a healthy retirement life. Unfortunately, current learning solutions are insufficient to address the needs of seniors who are unfamiliar with technology. A learning solution is needed to bridge the digital divide and help our target population to acquire the necessary digital skills to stay connected with the world and reduce social isolation. Our learning design aims to provide an accessible learning platform for seniors, enabling them to learn effectively and overcome social isolation. \n We divided the stakeholders into three categories, namely direct stakeholders, indirect stakeholders, and mixed stakeholders. We listed all the stakeholders and made a stakeholder map. \n We also conducted 5 interviews with our target population. Our research process involves the identification of a target population of seniors over 65 and preparing interview questions. We also searched the internet for existing learning solutions, the target population's learning habits, teaching methods, curriculum, and learning environment settings. In the second stage, we conducted interviews with six interviewees, collected data, and prioritized the needs of the target population. We also compiled helpful resources from the web, including existing solutions, research articles, and social media tools. Last but not least, we also identified challenges faced by seniors, such as fraud and privacy issues. According to the data we have collected, in our vision, we will set the course in a physical environment; that is, seniors will come to the physical classroom to learn. We have considered in detail both the physical and the social context of our learning environment. \n Our general learning goal is for 65+ seniors to gain more social connections after completing social media courses. The specific goals and objectives for the WeChat, Alipay and Youtube courses are outlined, including tasks such as commenting on a post, sending a message, and subscribing to videos.",
-            "In the design phase, We brainstormed many preliminary design ideas, and after integrating all the opinions, we got three relatively complete design ideas. According to these three designs, we finally integrated them into the final design through all aspects of consideration. After the design stage, we made an LMS prototype based on our final design idea. Then we prepared a series of evaluation plans, and based on the collected data, we modified our design. We are utilizing Google Classroom as our Learning Management System (LMS) due to its collaborative features, which allow us to work together as a team simultaneously. This platform is an accessible and user-friendly option with a straightforward interface. We selected a cover image that showcases our three primary courses: WeChat, Alipay, and YouTube. Furthermore, we opted for a green color scheme as it has a calming effect on users and is gentle on the eyes."
-    ]
+        "content": [
+            {
+                "image": {
+                    "src": "kahoot.png",
+                    "alt": "four iPhone screens showing the interfaces of PawfectNYC"
+                },
+                "paragraph": "For dog owners aged 20 to 35 who live in New York and need to commute to work, pets are their spiritual comfort in busy urban life, but keeping pets with a busy lifestyle also contains great challenges. PawfectNYC—a social learning platform designed for young pet owners in NYC—could fill a crucial gap in addressing the needs of the target population because it would provide a structured and supportive online community for learning and sharing information. Such a platform would be a lifeline for NYC young dog owners who are commuters, helping them to balance their busy lives with the needs of their beloved pets."
+            },
+            {
+                "image": {
+                    "src": "targetusers.png",
+                    "alt": "Description of image 2"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycsarah.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "paragraph": "The users of PawfectNYC are dog owners aged 20 to 35 who live in New York and need to commute to work. As the platform develops, some other age groups may also be included. I want to focus on dog owners because they face more severe challenges than owners of other pets in NYC since dogs require regular exercise and socialization. Also, focusing on a specific type of pet allows PawfectNYC to tailor its services and content to the unique needs of dog owners rather than trying to provide a one-size-fits-all solution that may not be as effective for all types of pets."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycbackground.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "image": {
+                    "src": "socialmedias.jpg",
+                    "alt": "Description of image 4"
+                }},
+            {
+                "paragraph": "Pets is a subreddit and an online community platform on the social media site Reddit that focuses on everything related to pets, such as their well-being, behavior, and care. As a SMILES (Social Media in Learning Environments), it is an increasingly popular and thriving online community with more than 221k members (Reddit, n.d.)."
+            },
+            {
+                "paragraph": "Buddies is a mobile app designed to make pet care easier and more accessible for pet owners. Developed by Blue Buffalo, a leading pet food brand, Buddies offers a range of features and resources such as pet-related podcasts, articles, blogs, a discussion feed, and a channel to seek professional advice to help pet owners connect and learn more about pet care with a user-friendly interface."
+            },
+            {
+                "image": {
+                    "src": "feedbacks.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "image": {
+                    "src": "feedbackprocess.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "paragraph": "After doing a rough prototype, I sent my figma file to Twitter and LinkedIn to seek opinions from netizens. And I also sought the opinions of dog-owning friends around me to modify my design."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycprototype.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype1.jpg",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype2.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype3.jpg",
+                    "alt": "Description of image 6"
+                }}
+        ]
     },
     {
         "id" : "Narrative Design",
         "header" : "Narrative Design for Learning Projects",
         "description" : "In the Narrative course by Professor Ben Maddox, we have designed and produced a series of learning theory and science-based narrative pieces using a variety of digital media formats, namely Narrative in Audio, Games, Social Media & Learning, VR, MR & AR, and Motion Graphics.",
-        "imageSrc" : "narrative.jpg",
-        "imageAlt" : "A vintage printer with the words stories matter on the paper",
-        "projectLink" : "#",
-        "detail": "Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat."
+        "content": [
+            {
+                "image": {
+                    "src": "narrative.jpg",
+                    "alt": ""
+                },
+                "paragraph": "For dog owners aged 20 to 35 who live in New York and need to commute to work, pets are their spiritual comfort in busy urban life, but keeping pets with a busy lifestyle also contains great challenges. PawfectNYC—a social learning platform designed for young pet owners in NYC—could fill a crucial gap in addressing the needs of the target population because it would provide a structured and supportive online community for learning and sharing information. Such a platform would be a lifeline for NYC young dog owners who are commuters, helping them to balance their busy lives with the needs of their beloved pets."
+            },
+            {
+                "image": {
+                    "src": "targetusers.png",
+                    "alt": "Description of image 2"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycsarah.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "paragraph": "The users of PawfectNYC are dog owners aged 20 to 35 who live in New York and need to commute to work. As the platform develops, some other age groups may also be included. I want to focus on dog owners because they face more severe challenges than owners of other pets in NYC since dogs require regular exercise and socialization. Also, focusing on a specific type of pet allows PawfectNYC to tailor its services and content to the unique needs of dog owners rather than trying to provide a one-size-fits-all solution that may not be as effective for all types of pets."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycbackground.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "image": {
+                    "src": "socialmedias.jpg",
+                    "alt": "Description of image 4"
+                }},
+            {
+                "paragraph": "Pets is a subreddit and an online community platform on the social media site Reddit that focuses on everything related to pets, such as their well-being, behavior, and care. As a SMILES (Social Media in Learning Environments), it is an increasingly popular and thriving online community with more than 221k members (Reddit, n.d.)."
+            },
+            {
+                "paragraph": "Buddies is a mobile app designed to make pet care easier and more accessible for pet owners. Developed by Blue Buffalo, a leading pet food brand, Buddies offers a range of features and resources such as pet-related podcasts, articles, blogs, a discussion feed, and a channel to seek professional advice to help pet owners connect and learn more about pet care with a user-friendly interface."
+            },
+            {
+                "image": {
+                    "src": "feedbacks.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "image": {
+                    "src": "feedbackprocess.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "paragraph": "After doing a rough prototype, I sent my figma file to Twitter and LinkedIn to seek opinions from netizens. And I also sought the opinions of dog-owning friends around me to modify my design."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycprototype.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype1.jpg",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype2.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype3.jpg",
+                    "alt": "Description of image 6"
+                }}
+        ]
     },
     {
         "id" : "UX design",
         "header" : "NYU Course Registration: Albert",
         "description" : "ALBERT, NYU's registration system, works seamlessly for its basic function but leaves a lot to be desired when helping students decide what to take or find courses across the many different schools and programs. In this project, we investigated student needs, frustrations, and wants regarding course selection to identify key insights pointing to how we might design better course selection resources and tools.",
-        "imageSrc" : "albert.jpg",
-        "imageAlt" : "A laptop with newly designed Albert interface",
-        "projectLink" : "#",
-        "detail": "Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat."
+        "content": [
+            {
+                "image": {
+                    "src": "albert.jpg",
+                    "alt": "four iPhone screens showing the interfaces of PawfectNYC"
+                },
+                "paragraph": "For dog owners aged 20 to 35 who live in New York and need to commute to work, pets are their spiritual comfort in busy urban life, but keeping pets with a busy lifestyle also contains great challenges. PawfectNYC—a social learning platform designed for young pet owners in NYC—could fill a crucial gap in addressing the needs of the target population because it would provide a structured and supportive online community for learning and sharing information. Such a platform would be a lifeline for NYC young dog owners who are commuters, helping them to balance their busy lives with the needs of their beloved pets."
+            },
+            {
+                "image": {
+                    "src": "targetusers.png",
+                    "alt": "Description of image 2"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycsarah.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "paragraph": "The users of PawfectNYC are dog owners aged 20 to 35 who live in New York and need to commute to work. As the platform develops, some other age groups may also be included. I want to focus on dog owners because they face more severe challenges than owners of other pets in NYC since dogs require regular exercise and socialization. Also, focusing on a specific type of pet allows PawfectNYC to tailor its services and content to the unique needs of dog owners rather than trying to provide a one-size-fits-all solution that may not be as effective for all types of pets."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycbackground.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "image": {
+                    "src": "socialmedias.jpg",
+                    "alt": "Description of image 4"
+                }},
+            {
+                "paragraph": "Pets is a subreddit and an online community platform on the social media site Reddit that focuses on everything related to pets, such as their well-being, behavior, and care. As a SMILES (Social Media in Learning Environments), it is an increasingly popular and thriving online community with more than 221k members (Reddit, n.d.)."
+            },
+            {
+                "paragraph": "Buddies is a mobile app designed to make pet care easier and more accessible for pet owners. Developed by Blue Buffalo, a leading pet food brand, Buddies offers a range of features and resources such as pet-related podcasts, articles, blogs, a discussion feed, and a channel to seek professional advice to help pet owners connect and learn more about pet care with a user-friendly interface."
+            },
+            {
+                "image": {
+                    "src": "feedbacks.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "image": {
+                    "src": "feedbackprocess.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "paragraph": "After doing a rough prototype, I sent my figma file to Twitter and LinkedIn to seek opinions from netizens. And I also sought the opinions of dog-owning friends around me to modify my design."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycprototype.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype1.jpg",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype2.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype3.jpg",
+                    "alt": "Description of image 6"
+                }}
+        ]
     },
     {
         "id" : "Learning Science Research",
         "header" : "FOLS Final Report: Learning on Reddit",
         "description" : "Established in 2005, Reddit is a 17-year-old social platform that allows users to discover and share content matching their interests. Stephanie, Shihan and I each selected an observation lens to explore learning behaviors on Reddit. I also made a Wix site to showcase our findings and analysis.",
-        "imageSrc" : "reddit.jpg",
-        "imageAlt" : "A vintage printer with the words stories matter on the paper",
-        "projectLink" : "#",
-        "detail": "Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat. Id nostrud officia laboris magna sunt mollit aliquip labore do. Anim aliquip cupidatat minim enim fugiat deserunt ut sit aliqua. Deserunt deserunt consectetur excepteur laboris amet dolor exercitation tempor dolore adipisicing cupidatat. Aliquip occaecat elit aliquip sit minim. Et adipisicing duis magna enim velit esse. Sit ex ex tempor ullamco irure veniam est esse excepteur nisi excepteur. Ex duis fugiat pariatur dolor ea non deserunt aliquip ad officia mollit occaecat."
+        "content": [
+            {
+                "image": {
+                    "src": "reddit.jpg",
+                    "alt": ""
+                },
+                "paragraph": "For dog owners aged 20 to 35 who live in New York and need to commute to work, pets are their spiritual comfort in busy urban life, but keeping pets with a busy lifestyle also contains great challenges. PawfectNYC—a social learning platform designed for young pet owners in NYC—could fill a crucial gap in addressing the needs of the target population because it would provide a structured and supportive online community for learning and sharing information. Such a platform would be a lifeline for NYC young dog owners who are commuters, helping them to balance their busy lives with the needs of their beloved pets."
+            },
+            {
+                "image": {
+                    "src": "targetusers.png",
+                    "alt": "Description of image 2"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycsarah.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "paragraph": "The users of PawfectNYC are dog owners aged 20 to 35 who live in New York and need to commute to work. As the platform develops, some other age groups may also be included. I want to focus on dog owners because they face more severe challenges than owners of other pets in NYC since dogs require regular exercise and socialization. Also, focusing on a specific type of pet allows PawfectNYC to tailor its services and content to the unique needs of dog owners rather than trying to provide a one-size-fits-all solution that may not be as effective for all types of pets."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycbackground.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "image": {
+                    "src": "socialmedias.jpg",
+                    "alt": "Description of image 4"
+                }},
+            {
+                "paragraph": "Pets is a subreddit and an online community platform on the social media site Reddit that focuses on everything related to pets, such as their well-being, behavior, and care. As a SMILES (Social Media in Learning Environments), it is an increasingly popular and thriving online community with more than 221k members (Reddit, n.d.)."
+            },
+            {
+                "paragraph": "Buddies is a mobile app designed to make pet care easier and more accessible for pet owners. Developed by Blue Buffalo, a leading pet food brand, Buddies offers a range of features and resources such as pet-related podcasts, articles, blogs, a discussion feed, and a channel to seek professional advice to help pet owners connect and learn more about pet care with a user-friendly interface."
+            },
+            {
+                "image": {
+                    "src": "feedbacks.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "image": {
+                    "src": "feedbackprocess.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "paragraph": "After doing a rough prototype, I sent my figma file to Twitter and LinkedIn to seek opinions from netizens. And I also sought the opinions of dog-owning friends around me to modify my design."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycprototype.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype1.jpg",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype2.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype3.jpg",
+                    "alt": "Description of image 6"
+                }}
+        ]
     }
 ]
