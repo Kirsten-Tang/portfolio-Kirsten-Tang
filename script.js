@@ -1,26 +1,7 @@
 console.log("hello, world!");
 
-const Project = class {
-    constructor(
-        id,
-        header,
-        description,
-        imageSrc,
-        imageAlt,
-        detail
-    ){
-        this.id = id;
-        this.header = header;
-        this.description = description;
-        this.imageSrc = imageSrc;
-        this.imageAlt = imageAlt;
-        this.detail = detail;
-    }
-};
-
 const projectGridElement = document.querySelector('.project-grid');
 const modalContainer = document.querySelector('#modal');
-const modalContent = document.querySelector('#modal-content');
 const modalItems = document.querySelector('#modal-items');
 const body = document.querySelector('body');
 let globalData;
@@ -44,14 +25,14 @@ function closeModal() {
     modalItems.classList.remove('active');
 }
 
-function buildElements(item){
+function buildElements(item) {
     var articleElement = document.createElement("article");
     articleElement.setAttribute('id', item.id);
 
-    if (item.images && item.images.length > 0) {
+    if (item.content && item.content.length > 0 && item.content[0].image) {
         var imgElement = document.createElement("img");
-        imgElement.setAttribute('src', `assets/${item.images[0].src}`);
-        imgElement.setAttribute('alt', item.images[0].alt);
+        imgElement.setAttribute('src', `assets/${item.content[0].image.src}`);
+        imgElement.setAttribute('alt', item.content[0].image.alt);
         articleElement.appendChild(imgElement);
     }
 
@@ -66,49 +47,36 @@ function buildElements(item){
 
     projectGridElement.append(articleElement);
 
-    articleElement.addEventListener('click', function (event) {
+    articleElement.addEventListener('click', function(event) {
         body.classList.add('modal-active');
         modalContainer.classList.add('active');
         modalItems.classList.add('active');
         
         getSelectedArticleContent(event);
     });
-};
+}
 
 function getSelectedArticleContent(event) {
     globalData.find(function(item) {
         if (item.id === event.currentTarget.id) {
             let contentHTML = `<div class="observable"><h3>${item.header}</h3></div>`;
 
-            let firstParagraph = item.paragraphs[0].replace(/\n/g, "<br><br>");
-            contentHTML += `
-                <div class="observable flex-container">
-                    <img class="modal-img-left" src="assets/${item.images[0].src}" alt="${item.images[0].alt}">
-                    <p class="modal-text-right">${firstParagraph}</p>
-                </div>`;
+            // Start loop from the first item
+            item.content.forEach(contentItem => {
+                if (contentItem.image) {
+                    contentHTML += `
+                        <div class="observable flex-container">
+                            <img class="modal-img-left" src="assets/${contentItem.image.src}" alt="${contentItem.image.alt}">
+                        </div>`;
+                }
 
-            item.paragraphs.slice(1).forEach(paragraph => {
-                let formattedParagraph = paragraph.replace(/\n/g, "<br><br>");
-                contentHTML += `
-                    <div class="observable">
-                        <p class="modal-text">${formattedParagraph}</p>
-                    </div>`;
-            });
-
-            let linkedImagesHTML = '<div class="linked-images-grid">';
-            item.images.slice(1).forEach(image => {
-                if (image.link) {
-                    linkedImagesHTML += `
-                        <div class="observable linked-image-container">
-                            <a href="${image.link}" target="_blank">
-                                <img class="modal-img" src="assets/${image.src}" alt="${image.alt}">
-                            </a>
+                if (contentItem.paragraph) {
+                    contentHTML += `
+                        <div class="observable">
+                            <p class="modal-text-right">${contentItem.paragraph}</p>
                         </div>`;
                 }
             });
-            linkedImagesHTML += '</div>';
-
-            contentHTML += linkedImagesHTML;
 
             modalItems.innerHTML = contentHTML;
             observeModalContent();

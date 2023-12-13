@@ -1,20 +1,81 @@
 [
     {
-        "id" : "Social Learning Design",
-        "header" : "PawfectNYC: Connecting NYC's Dog Community",
+        "id": "Social Learning Design",
+        "header": "PawfectNYC: Connecting NYC's Dog Community",
         "description" : "PawfectNYC is a social learning platform designed to support the learning needs of 20-35 NYC dog owners who are commuters. The platform aims to help dog owners balance their busy lifestyles with the needs of their beloved pets by providing a structured and supportive online community for learning and sharing information.",
-        "images": [
-            {"src": "pawfectnyc.png", "alt": "four iPhone screens showing the interfaces of PawfectNYC"},
-            {"src": "pawfectnyc2.png", "alt": "Description of image 2", "link": "https://docs.google.com/document/d/1F2GOrlTBvQciH2Y_4uRGWRcSaz6wZ9QnrfGnYapB2ak/edit"},
-            {"src": "pawfectnyc3.png", "alt": "Description of image 3", "link":"https://www.figma.com/file/PVLuh9FdCrU2QzkKocbbNU/PawfectNYC-Project-Design?type=design&node-id=306%3A1513&mode=design&t=WZ3CbAx7cG48uObf-1"}
-        ],
-        "paragraphs": [
-            "For dog owners aged 20 to 35 who live in New York and need to commute to work, pets are their spiritual comfort in busy urban life, but keeping pets with a busy lifestyle also contains great challenges. Typically, dogs should have at least two walks per day, but to ensure they can meet their adequate exercise needs, they might need to go out for 3-4 walks that last approximately 15 minutes daily (pdsa, n.d.). The required time may increase depending on the dog's breed and size. \nHowever, it can be challenging for NYC young dog owners to properly care for their dogs with a busy work schedule. Dogs who don't get enough exercise and companionship will likely develop health, mental, and behavioral problems that make pet ownership in NYC even more difficult. Pets are fragile, and they can develop health problems out of the blue. \nFor NYC young dog owners, the problem is that the pet's sudden health condition does not negotiate with the owner's work schedule, and they have limited options for learning about common health issues and recognizing the signs of illness in their pets. In some cases, owners may miss work or make other sacrifices to care for their pets, creating additional stress and financial burden. This also makes owners hope to find information to deal with their dog's issues by themselves rather than seeking local veterinarians, which is a more time-consuming and expensive way. Additionally, while traditional online resources such as articles and blogs provide helpful information, they lack the interactive and collaborative features a social learning platform can offer. The information can also be scattered across multiple websites, making it difficult for pet owners to find all the information they need in one place.",
-            "PawfectNYC—a social learning platform designed for young pet owners in NYC—could fill a crucial gap in addressing the needs of the target population because it would provide a structured and supportive online community for learning and sharing information. By connecting with other individuals who have experience dealing with pets’ common health issues, recognizing the signs of illness, and providing basic first aid and other forms of care, NYC pet owners can share information and resources, offer support and advice, and even arrange for pet-sitting or other services when they are unable to be with their pets themselves. It can achieve through collaborative learning activities provided by PawfectNYC such as group discussions about dog behavior, training, health, and dog-sitting; user-generated content such as blogs and articles to create and share their content related to pet care; and webinars and Q&A sessions from pet experts who could offer advice and answer questions about common pet issues. PawfectNYC will also provide pet-sitting services with a reliable sitter who has done a background check to help NYC dog owners achieve the amount of exercise for their pets when they are busy and a powerful network of local veterinarians for users to seek professional help. Such a platform would be a lifeline for NYC young dog owners who are commuters, helping them to balance their busy lives with the needs of their beloved pets. ",
-            "The users of PawfectNYC are dog owners aged 20 to 35 who live in New York and need to commute to work. As the platform develops, some other age groups may also be included. I want to focus on dog owners because they face more severe challenges than owners of other pets in NYC since dogs require regular exercise and socialization. Also, focusing on a specific type of pet allows PawfectNYC to tailor its services and content to the unique needs of dog owners rather than trying to provide a one-size-fits-all solution that may not be as effective for all types of pets.\nSecondly, this specific age group will likely have recently entered or have yet to gain a firm foothold in the workforce. Thus, they may not have as much control over their schedules. Daily commuting, occasional work overtime, or the inability to ask for leave from the company is common. As a result, they may find it challenging to provide their pets with the attention and care they need. They may also not be able to deal with pet emergencies due to busy schedules. What’s more, newcomers to the workplace often mean a shortage of funds, and they may not be able to seek veterinary help as often, as veterinarians in New York are not cheap. ",
-            "Thus, gaining affordable solutions that offer convenience and value through interacting with the PawfectNYC community can make it easier for dog owners to prioritize their pets' care while still managing their expenses. I also want to keep our social media learning community young and energetic and create an active learning community. By targeting dog owners aged 20 to 35 who live in New York and need to commute to work, PawfectNYC can provide a solution that meets their specific needs and helps to make pet ownership more manageable and enjoyable."
-    ]
+        "content": [
+            {
+                "image": {
+                    "src": "pawfectnyc.png",
+                    "alt": "four iPhone screens showing the interfaces of PawfectNYC"
+                },
+                "paragraph": "For dog owners aged 20 to 35 who live in New York and need to commute to work, pets are their spiritual comfort in busy urban life, but keeping pets with a busy lifestyle also contains great challenges. PawfectNYC—a social learning platform designed for young pet owners in NYC—could fill a crucial gap in addressing the needs of the target population because it would provide a structured and supportive online community for learning and sharing information. Such a platform would be a lifeline for NYC young dog owners who are commuters, helping them to balance their busy lives with the needs of their beloved pets."
+            },
+            {
+                "image": {
+                    "src": "targetusers.png",
+                    "alt": "Description of image 2"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycsarah.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "paragraph": "The users of PawfectNYC are dog owners aged 20 to 35 who live in New York and need to commute to work. As the platform develops, some other age groups may also be included. I want to focus on dog owners because they face more severe challenges than owners of other pets in NYC since dogs require regular exercise and socialization. Also, focusing on a specific type of pet allows PawfectNYC to tailor its services and content to the unique needs of dog owners rather than trying to provide a one-size-fits-all solution that may not be as effective for all types of pets."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycbackground.png",
+                    "alt": "Description of image 3"
+                }},
+            {
+                "image": {
+                    "src": "socialmedias.jpg",
+                    "alt": "Description of image 4"
+                }},
+            {
+                "paragraph": "Pets is a subreddit and an online community platform on the social media site Reddit that focuses on everything related to pets, such as their well-being, behavior, and care. As a SMILES (Social Media in Learning Environments), it is an increasingly popular and thriving online community with more than 221k members (Reddit, n.d.)."
+            },
+            {
+                "paragraph": "Buddies is a mobile app designed to make pet care easier and more accessible for pet owners. Developed by Blue Buffalo, a leading pet food brand, Buddies offers a range of features and resources such as pet-related podcasts, articles, blogs, a discussion feed, and a channel to seek professional advice to help pet owners connect and learn more about pet care with a user-friendly interface."
+            },
+            {
+                "image": {
+                    "src": "feedbacks.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "image": {
+                    "src": "feedbackprocess.png",
+                    "alt": "Description of image 5"
+                }},
+            {
+                "paragraph": "After doing a rough prototype, I sent my figma file to Twitter and LinkedIn to seek opinions from netizens. And I also sought the opinions of dog-owning friends around me to modify my design."
+            },
+            {
+                "image": {
+                    "src": "pawfectnycprototype.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype1.jpg",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype2.png",
+                    "alt": "Description of image 6"
+                }},
+            {
+                "image": {
+                    "src": "pawfectnycprototype3.jpg",
+                    "alt": "Description of image 6"
+                }}
+        ]
     },
+
     {
         "id" : "Learning Experience Design",
         "header" : "Learning Solution Designed for 65+ Seniors",
