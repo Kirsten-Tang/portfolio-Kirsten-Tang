@@ -131,7 +131,7 @@ function showSection(sectionClass) {
 document.querySelector('.menu-bar').addEventListener('click', function (event) {
     const text = event.target.textContent;
     if (text === 'About') {
-        showSection('landing');
+        showSection('about');
     } else if (text === 'Projects') {
         showSection('project-grid');
     } else if (text === 'Skills') {

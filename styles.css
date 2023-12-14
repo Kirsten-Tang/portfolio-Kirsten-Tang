@@ -148,6 +148,12 @@ main {
   margin: 20px;
 }
 
+.about-container {
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
+
 .project-grid{
   width: auto;
   height: auto;
@@ -367,19 +373,21 @@ h3 {
 }
 
 .bar{
-  background-color: #EEE;
+  background-color: #FFF;
   padding: 2px;
   border-radius: 15px;
   margin-bottom: 20px;
   font-size: 16px;
-  color: #FFF;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  box-shadow: 0 0 10px #ffffffb3;
+  color: #000000;
+  font-family: cursive;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  border: black;
 }
 .bar::before{
   content:  attr(data-skill);
-  background-color: #f3b0ff;
+  background-image: url(assets/skillbar.jpg);
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
